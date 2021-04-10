@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>The American College</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <!-- <script src="https://use.fontawesome.com/8f95b4005a.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="header-sticky">
+    <!-- <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading...</h2>
+        </div>
+    </section>  -->
+
+    <div class="page-title parallax parallax1">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-heading">
+                        <h1 class="title">Register</h1>
+                    </div><!-- /.page-title-captions -->
+
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.page-title -->
+
+
+
+    <!-- Login -->
+    <div class="flat-row pad-top90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="flat-login">
+                        <form class="flat-contact-form border-white border-large" id="contactform5" method="post"
+                            action="/">
+                            <div class="field clearfix">
+                                <div class="wrap-type-input">
+                                    <div class="input-wrap name">
+                                        <p> <i class="glyphicon glyphicon-envelope"></i> Email address *</p>
+                                        <input type="text" value="" tabindex="1" name="name" id="name" required>
+                                    </div>
+                                    <div class="input-wrap email">
+                                        <p><i class="glyphicon glyphicon-lock"></i> Password *</p>
+                                        <input type="password" value="" tabindex="2" name="password" id="email-contact">
+                                    </div>
+                                    <div class="input-wrap email">
+                                        <p><i class="glyphicon glyphicon-user"></i> Name *</p>
+                                        <input type="text" value="" tabindex="4" name="fname" id="name-name" required>
+                                    </div>
+                                    <div class="input-wrap email">
+                                        <p> <i class='fas fa-venus'></i> Gender *</p>
+                                        <input type="text" value="" tabindex="5" name="lname"   list="gender"required >
+                                        <!-- <label for="gen"></label>
+                                        <select name="gen" id="gen">
+                                            <option style="color:#3366cc" value="male">Male</option>
+                                            <option style="color:#3366cc" value="female">Female</option>
+                                            <option style="color:#3366cc" value="other">Other</option>
+
+                                        </select> -->
+                                    </div>
+
+                                    <div class="input-wrap email">
+                                        <p> <i class="glyphicon glyphicon-education"></i> Department *</p>
+                                        <input type="text" value="" tabindex="6" name="Department" id="dept-dept"
+                                            required>
+                                    </div>
+                                    <div class="input-wrap email">
+                                        <p> <i class="glyphicon glyphicon-calendar"></i> Batch *</p>
+                                        <input type="text" value="" tabindex="7" name="Batch" id="batch-batch" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit-wrap">
+                                <button onclick="showToast()">CREATE</button>
+                            </div>
+                            <div id="showToast">Successfully created the account
+
+                            </div>
+
+                        </form><!-- /.comment-form -->
+                    </div><!-- /.flat-login -->
+                </div><!-- /.col-md-6 .col-md-offset-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+
+
+
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+        function showToast() {
+            // Get the snackbar DIV
+            var x = document.getElementById("showToast");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 10000);
+        }
+
+    </script>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="javascript/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/jquery.countdown.js"></script>
+    <script type="text/javascript" src="javascript/switcher.js"></script>
+    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="javascript/slider.js"></script>
+</body>
+
+</html>
