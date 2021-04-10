@@ -4,6 +4,10 @@ const crypto = require('crypto')
 const https = require("https")
 const bodyparser = require("body-parser")
 const app = express()
+
+require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+
 app.use(bodyparser.urlencoded({ extended: true }))
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/register.html")
@@ -107,8 +111,8 @@ app.post('/login', (req, res) => {
 })
 
 
-app.listen(3000, function () {
-  console.log("Server is running on port 3000");
+app.listen(PORT, function () {
+  console.log(`Server is running on port ${PORT}`);
 })
 //api key
 //99e71d39d268a544260f40961499fdca-us1
