@@ -9,12 +9,13 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyparser.urlencoded({ extended: true }))
-app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/register.html")
-})
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + "/index.html")
 })
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/register.html")
+})
+
 app.get('/home', (req, res) => {
   res.sendFile(__dirname + "/home.html")
 })
