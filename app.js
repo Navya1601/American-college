@@ -9,11 +9,11 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyparser.urlencoded({ extended: true }))
-app.get('/login', (req, res) => {
-  res.sendFile(__dirname + "/index.html")
+app.get('/register', (req, res) => {
+  res.sendFile(__dirname + "/register.html")
 })
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/register.html")
+  res.sendFile(__dirname + "/index.html")
 })
 
 app.get('/home', (req, res) => {
@@ -60,7 +60,7 @@ app.post("/", function (req, res) {
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
 
-      res.redirect('/login')
+      res.redirect('/')
 
     }
     else {
