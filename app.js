@@ -40,6 +40,9 @@ app.get('/register', (req, res) => {
 app.get('/rewards_and_Reco', (req, res) => {
   res.sendFile(__dirname + "/rewards_and_Reco.html")
 })
+app.get('/index', (req, res) => {
+  res.sendFile(__dirname + "/index.html")
+})
 app.use(express.static("public"))
 function hash(input, salt) { //- Hashing Function
   var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
