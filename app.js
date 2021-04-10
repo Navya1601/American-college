@@ -19,6 +19,27 @@ app.get("/", function (req, res) {
 app.get('/home', (req, res) => {
   res.sendFile(__dirname + "/home.html")
 })
+app.get('/career_support', (req, res) => {
+  res.sendFile(__dirname + "/career_support.html")
+})
+app.get('/contact_us', (req, res) => {
+  res.sendFile(__dirname + "/contact_us.html")
+})
+app.get('/profile-update', (req, res) => {
+  res.sendFile(__dirname + "/profile-update.html")
+})
+app.get('/digital-id', (req, res) => {
+  res.sendFile(__dirname + "/digital-id.html")
+})
+app.get('/events', (req, res) => {
+  res.sendFile(__dirname + "/events.html")
+})
+app.get('/register', (req, res) => {
+  res.sendFile(__dirname + "/register.html")
+})
+app.get('/rewards_and_Reco', (req, res) => {
+  res.sendFile(__dirname + "/rewards_and_Reco.html")
+})
 app.use(express.static("public"))
 function hash(input, salt) { //- Hashing Function
   var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
@@ -94,6 +115,8 @@ app.post('/login', (req, res) => {
         if (result.exact_matches.members[0].merge_fields.PASSWORD === password) {
           console.log("User Authenticated");
           res.redirect('/home')
+         
+
         }
         else {
           console.log("Wrong Password")
